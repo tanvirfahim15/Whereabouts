@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "297027728465",
+    "firebase_url": "https://whereabouts-6aed8.firebaseio.com",
+    "project_id": "whereabouts-6aed8",
+    "storage_bucket": "whereabouts-6aed8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297027728465:android:a7f8b6518ddf788a",
+        "android_client_info": {
+          "package_name": "me.whereaboutsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297027728465-tuti0sqrpqjv4kj1pu0ugi0q1bh0k7vp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI6oNOtZVj6O2dVFQyPOHED7KNewvODdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297027728465-tuti0sqrpqjv4kj1pu0ugi0q1bh0k7vp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
