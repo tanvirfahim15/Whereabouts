@@ -2,7 +2,8 @@ package me.whereaboutsapp;
 
 import android.graphics.Bitmap;
 
-import com.google.android.gms.maps.model.LatLng;
+
+import com.mapbox.mapboxsdk.geometry.LatLng;
 
 import java.net.URL;
 

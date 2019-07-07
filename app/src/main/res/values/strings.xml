@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Whereabouts</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoidGFudmlyZmFoaW0iLCJhIjoiY2p4c3V1d214MG50azNubnR3anB0YXZ3dyJ9.Mg5SaC8TrDQ6DbfS_K1tgw</string>
 </resources>
