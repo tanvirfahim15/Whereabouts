@@ -13,16 +13,16 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_icon_round"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD06q6QsrwDY9ZjWwMxLlztj8AdB9NnmSc" />
+            android:value="AIzaSyDh1VBgUcx4XmSuq556Wsj_ZbaImttRyX8" />
 
         <activity android:name=".LocationRequestActivity"></activity>
 

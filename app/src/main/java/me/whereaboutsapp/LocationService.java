@@ -81,7 +81,7 @@ public class LocationService extends BroadcastReceiver {
             Crashlytics.logException(e);}
 
         if(!gps_enabled&&!network_enabled){
-            locationOnNotification("title","message",context);
+            locationOnNotification("Location is Disabled","Tap here to continue",context);
             Bundle bundle = new Bundle();
             bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "101");
             bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Location is Disabled");
@@ -111,7 +111,7 @@ public class LocationService extends BroadcastReceiver {
         };
 
         if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            locationRequestNotification("title","message",context);
+            locationRequestNotification("Location Permission is Denied","Tap here to continue",context);
 
             Bundle bundle = new Bundle();
             bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "102");
@@ -140,7 +140,7 @@ public class LocationService extends BroadcastReceiver {
             String lastLatStr = sharedPref.getString("lat","---");
             String lastLngStr = sharedPref.getString("lng","---");
             if(!lastLatStr.equals("---")&&!lastLngStr.equals("---")){
-                if(distFrom((float) location.getLatitude(),(float) location.getLongitude(),Float.parseFloat(lastLatStr),Float.parseFloat(lastLngStr))<500){
+                if(distFrom((float) location.getLatitude(),(float) location.getLongitude(),Float.parseFloat(lastLatStr),Float.parseFloat(lastLngStr))<250){
                     return;
                 }
             }
@@ -191,7 +191,7 @@ public class LocationService extends BroadcastReceiver {
         }
 
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context, channelId)
-                .setSmallIcon(R.drawable.whereabouts)//R.mipmap.ic_launcher
+                .setSmallIcon(R.mipmap.ic_launcher_icon)//R.mipmap.ic_launcher
                 .setContentTitle(title)
                 .setContentText(message)
                 .setVibrate(new long[]{100, 250})
@@ -224,7 +224,7 @@ public class LocationService extends BroadcastReceiver {
         }
 
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context, channelId)
-                .setSmallIcon(R.drawable.whereabouts)//R.mipmap.ic_launcher
+                .setSmallIcon(R.mipmap.ic_launcher_icon)//R.mipmap.ic_launcher
                 .setContentTitle(title)
                 .setContentText(message)
                 .setVibrate(new long[]{100, 250})

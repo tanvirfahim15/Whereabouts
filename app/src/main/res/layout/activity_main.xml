@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/colorBack"
     android:orientation="vertical">
 
 
@@ -26,15 +25,27 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/create_whereabouts"
             style="@android:style/Widget.Holo.Button"
             android:layout_width="match_parent"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:background="#3D3D3D"
             android:text="Create Whereabouts"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/refresh"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="#3D3D3D"
+            android:text="Refresh Whereabouts"
+            android:textSize="14sp" />
     </LinearLayout>
 </LinearLayout>
